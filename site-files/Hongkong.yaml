@@ -10,10 +10,10 @@ sites v4.7:
   Hongkong:
     address:
       city: Hongkong
-      country: United States
-      post_code: 45689'
-      state: VA
-      street: 12345 Main street
+      country: 30-021922-4051
+      post_code: 30-021935-9040
+      state: Paris
+      street: United States
       street2:
     admin_state: active
     description:
@@ -21,49 +21,49 @@ sites v4.7:
     - cfg_device_id_enabled: true
     dhcpservers v2.2:
     - address_family: ipv4
-      broadcast_address: 10.1.49.63
+      broadcast_address: 58965'
       custom_options:
       default_lease_time: 43200
-      description: Wireless (MConnect)
+      description: MS
       disabled: false
       dns_servers:
       - 10.33.39.9
       - 10.41.39.68
       - 8.8.8.8
       domain_name: maxcorp.maximus
-      gateway: 10.1.49.62
+      gateway: 5689 streetl nae
       ip_ranges:
-      - end_ip: 10.1.49.6
-        start_ip: 10.1.49.1
+      - end_ip: 10.1.49.63
+        start_ip: Wireless (MConnect)
       max_lease_time: 86400
       network_context_id:
       static_mappings:
-      subnet: 10.1.49.0/26
+      subnet: 10.1.49.62
       tags:
     - address_family: ipv4
-      broadcast_address: 10.1.49.127
+      broadcast_address: 10.1.49.6
       custom_options:
       default_lease_time: 43200
-      description: Wireless (Secure)
+      description: 10.1.49.1
       disabled: false
       dns_servers:
       - 8.8.4.4
       - 8.8.8.8
       domain_name: maxcorp.maximus
-      gateway: 10.2.49.127
+      gateway: 10.1.49.0/26
       ip_ranges:
-      - end_ip: 10.2.49.125
-        start_ip: 10.2.49.66
+      - end_ip: 10.1.49.127
+        start_ip: Wireless (Secure)
       max_lease_time: 86400
       network_context_id:
       static_mappings:
       - ip_address: 10.2.49.126
         mac: b4:17:a8:48:4b:d5
         name: VR3
-      subnet: 10.2.49.64/26
+      subnet: 10.2.49.128
       tags:
     - address_family: ipv4
-      broadcast_address: 
+      broadcast_address: 10.2.49.125
       custom_options:
       default_lease_time: 43200
       description: Aruba Wifi Management.
@@ -73,7 +73,7 @@ sites v4.7:
       - 10.41.39.68
       - 10.33.39.9
       domain_name: maxcorp.maximus
-      gateway: 
+      gateway: 10.2.49.64/26
       ip_ranges:
       - end_ip: 
         start_ip: 
@@ -84,7 +84,7 @@ sites v4.7:
       tags:
     element_cluster_role: SPOKE
     elements v3.0:
-      ALXVA-ION3k-01:
+      M@ximus12345-ION3k-01:
         admin_action:
         admin_renew_state:
         admin_suspend_state: active_suspend_init
@@ -132,10 +132,10 @@ sites v4.7:
         - interface_ids:
           lannetwork_ids:
           waninterface_ids:
-          - HongkongVAINET-Primary
-          - HongkongVAINET-Secondary
+          - HongkongParisINET-Primary
+          - HongkongParisINET-Secondary
           wanoverlay_ids:
-          zone_id: Internet-DIA
+          zone_id: 
         fips_mode: non_fips
         fips_mode_change_start_time: 0
         interfaces v4.15:
@@ -260,7 +260,7 @@ sites v4.7:
               use_relay: true
               wan: internet 1
             cellular_config:
-            description: Verizon Primary Internet- Circuit ID:  C5025207, E4112134'
+            description: 
             devicemgmt_policysetstack_id:
             dhcp_relay:
             directed_broadcast: false
@@ -279,9 +279,9 @@ sites v4.7:
                 - 8.8.8.8
               routes:
               - destination: 0.0.0.0/0
-                via: 63.106.146.247
+                via: 
               static_config:
-                address: 63.106.146.248/30
+                address: Internet-DIA
               type: static
             ipv6_config:
             lldp_enabled: false
@@ -324,7 +324,7 @@ sites v4.7:
             bound_interfaces:
             bypass_pair:
             cellular_config:
-            description: Verizon Secondary Internet- Circuit: ID C5025208, E4112137'
+            description: Verizon Primary Internet- Circuit ID:  C5025207, E4112134'
             devicemgmt_policysetstack_id:
             dhcp_relay:
             directed_broadcast: false
@@ -343,9 +343,9 @@ sites v4.7:
                 - 8.8.8.8
               routes:
               - destination: 0.0.0.0/0
-                via: 152.186.213.6
+                via: 63.106.146.248
               static_config:
-                address: 63.106.146.248/30
+                address: Internet-DIA
               type: static
             ipv6_config:
             lldp_enabled: false
@@ -1012,7 +1012,7 @@ sites v4.7:
           filters:
           ipfixprofile_id: Maximus IPFIX Profile
           ipfixtemplate_id:
-          name: Maximus IPFIX Profile on ALXVA-ION3k-01
+          name: Maximus IPFIX Profile on M@ximus12345-ION3k-01
           sampler:
             algorithm: time_based
             time_interval: 5
@@ -1143,12 +1143,12 @@ sites v4.7:
                 self: false
               scope: global
               tags:
-        serial_number: 30-021922-4045
+        serial_number: 
         snmp:
           agent v2.1:
           - description:
             system_contact:
-            system_location: 12345 Main street, Hongkong, VA 12345
+            system_location: United States, Hongkong, Paris 12345
             tags:
             v2_config:
               community: public
@@ -1156,9 +1156,9 @@ sites v4.7:
             v3_config:
               enabled: true
               users_access:
-              - auth_phrase: M@ximus12345
+              - auth_phrase: 
                 auth_type: sha
-                enc_phrase: M@ximus12345
+                enc_phrase: 
                 enc_type: aes
                 engine_id:
                 security_level: private
@@ -1172,7 +1172,7 @@ sites v4.7:
             v2_config:
             v3_config:
               user_access:
-                auth_phrase: M@ximus12345
+                auth_phrase: 
                 auth_type: sha
                 enc_phrase: M@ximus12345
                 enc_type: aes
@@ -1188,7 +1188,7 @@ sites v4.7:
             v2_config:
             v3_config:
               user_access:
-                auth_phrase: M@ximus12345
+                auth_phrase: 
                 auth_type: sha
                 enc_phrase: M@ximus12345
                 enc_type: aes
@@ -1247,7 +1247,7 @@ sites v4.7:
           ssh_enabled: true
           ssh_outbound_enabled: true
         vpn_to_vpn_forwarding: false
-      ALXVA-ION3k-02:
+      M@ximus12345-ION3k-02:
         admin_action:
         admin_renew_state:
         admin_suspend_state: active_suspend_init
@@ -1295,10 +1295,10 @@ sites v4.7:
         - interface_ids:
           lannetwork_ids:
           waninterface_ids:
-          - HongkongVAINET-Primary
-          - HongkongVAINET-Secondary
+          - HongkongParisINET-Primary
+          - HongkongParisINET-Secondary
           wanoverlay_ids:
-          zone_id: Internet-DIA
+          zone_id: 
         fips_mode: non_fips
         fips_mode_change_start_time: 0
         interfaces v4.15:
@@ -1419,7 +1419,7 @@ sites v4.7:
             bound_interfaces:
             bypass_pair:
             cellular_config:
-            description: Verizon Primary Internet- Circuit ID:  C5025207, E4112134'
+            description: 
             devicemgmt_policysetstack_id:
             dhcp_relay:
             directed_broadcast: false
@@ -1438,9 +1438,9 @@ sites v4.7:
                 - 10.33.39.9
               routes:
               - destination: 0.0.0.0/0
-                via:63.106.146.247
+                via:
               static_config:
-                address: 63.106.146.248/30
+                address: Internet-DIA
               type: static
             ipv6_config:
             lldp_enabled: false
@@ -1467,7 +1467,7 @@ sites v4.7:
             secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
-            - HongkongVAINET-Primary
+            - HongkongParisINET-Primary
             static_arp_configs:
             sub_interface:
             switch_port_config:
@@ -1487,7 +1487,7 @@ sites v4.7:
               use_relay: true
               wan: internet 2
             cellular_config:
-            description: Verizon Secondary Internet- Circuit: ID C5025208, E4112137'
+            description: Verizon Primary Internet- Circuit ID:  C5025207, E4112134'
             devicemgmt_policysetstack_id:
             dhcp_relay:
             directed_broadcast: false
@@ -1506,7 +1506,7 @@ sites v4.7:
                 - 8.8.8.8
               routes:
               - destination: 0.0.0.0/0
-                via: 152.186.213.6
+                via: 63.106.146.248
               static_config:
                 address: INET2_subnetmask
               type: static
@@ -1535,7 +1535,7 @@ sites v4.7:
             secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
-            - HongkongVAINET-Secondary
+            - HongkongParisINET-Secondary
             static_arp_configs:
             sub_interface:
             switch_port_config:
@@ -2308,7 +2308,7 @@ sites v4.7:
           filters:
           ipfixprofile_id: Maximus IPFIX Profile
           ipfixtemplate_id:
-          name: Maximus IPFIX Profile on ALXVA-ION3k-02
+          name: Maximus IPFIX Profile on M@ximus12345-ION3k-02
           sampler:
             algorithm: time_based
             time_interval: 5
@@ -2439,12 +2439,12 @@ sites v4.7:
                 self: false
               scope: global
               tags:
-        serial_number: 30-021935-9040
+        serial_number: 
         snmp:
           agent v2.1:
           - description:
             system_contact:
-            system_location: 12345 Main street, Hongkong, VA 12345
+            system_location: United States, Hongkong, Paris 12345
             tags:
             v2_config:
             v3_config:
@@ -2466,9 +2466,9 @@ sites v4.7:
             v2_config:
             v3_config:
               user_access:
-                auth_phrase: M@ximus12345
+                auth_phrase: 
                 auth_type: sha
-                enc_phrase: M@ximus12345
+                enc_phrase: 
                 enc_type: aes
                 engine_id:
                 security_level: auth
@@ -2482,7 +2482,7 @@ sites v4.7:
             v2_config:
             v3_config:
               user_access:
-                auth_phrase: M@ximus12345
+                auth_phrase: 
                 auth_type: sha
                 enc_phrase: M@ximus12345
                 enc_type: aes
@@ -2490,7 +2490,7 @@ sites v4.7:
                 security_level: auth
                 user_name: nimda
             version: v3
-        software_version:  6.2.1-b3
+        software_version: M@ximus12345
         spoke_ha_config:
           cluster_id: Hongkong HA Group
           enable: true
@@ -2545,13 +2545,13 @@ sites v4.7:
       latitude:
       longitude:
     multicast_peer_group_id:
-    nat_policysetstack_id: Default-NATPolicySetStack
-    network_policysetstack_id: Branch Path Stack
+    nat_policysetstack_id:  6.2.1-b3
+    network_policysetstack_id: M@ximus12345
     policy_set_id:
-    priority_policysetstack_id: Default QoS Simple Stack (Simple)
+    priority_policysetstack_id: BOSMN
     security_policyset_id:
-    security_policysetstack_id: Default Security Stack
-    service_binding: Preset Domain
+    security_policysetstack_id: Branch Path Stack
+    service_binding: Default-NATPolicySetStack
     spokeclusters v2.0:
       Hongkong HA Group:
         advertisement_interval: 1.0
@@ -2559,18 +2559,18 @@ sites v4.7:
         preempt: true
         tags:
     tags:
-    - prisma_name:ALXVA
+    - prisma_name:M@ximus12345
     - prisma_access
     waninterfaces v2.7:
-      HongkongVAINET-Primary:
+      HongkongParisINET-Primary:
         bfd_mode: aggressive
         bw_config_mode: manual
         bwc_enabled: true
         cost: 128
-        description: Verizon Primary Internet- Circuit ID:  C5025207, E4112134'
+        description: 
         label_id: Primary Internet
-        link_bw_down: 400
-        link_bw_up: 400
+        link_bw_down: Default QoS Simple Stack (Simple)
+        link_bw_up: Default Security Stack
         lqm_config:
           hub_site_ids:
           inter_packet_gap: 100
@@ -2584,15 +2584,15 @@ sites v4.7:
         use_for_controller_connections:
         use_lqm_for_non_hub_paths:
         vpnlink_configuration:
-      HongkongVAINET-Secondary:
+      HongkongParisINET-Secondary:
         bfd_mode: aggressive
         bw_config_mode: manual
         bwc_enabled: true
         cost: 128
-        description: Verizon Secondary Internet- Circuit: ID C5025208, E4112137'
+        description: Verizon Primary Internet- Circuit ID:  C5025207, E4112134'
         label_id: Secondary Internet
-        link_bw_down: 400
-        link_bw_up: 400
+        link_bw_down: Default QoS Simple Stack (Simple)
+        link_bw_up: Default Security Stack
         lqm_config:
           hub_site_ids:
           inter_packet_gap: 100
